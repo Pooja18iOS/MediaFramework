@@ -7,25 +7,30 @@
 
 import UIKit
 
-class MediaKitCell: UICollectionViewCell {
+public func MyCustomFrameworkBundle() -> Bundle? {
+    let frameworkBundle = Bundle(for: MediaMainViewController.self)
+    return frameworkBundle
+}
+
+public class MediaKitCell: UICollectionViewCell {
     
 }
 
-class CreateMediaKitCell: UICollectionViewCell {
-    @IBOutlet weak var btnCreateMediakit: UIButton!
+public class CreateMediaKitCell: UICollectionViewCell {
+    @IBOutlet weak public var btnCreateMediakit: UIButton!
 }
 
-class MediaMainViewController: UIViewController {
+public class MediaMainViewController: UIViewController {
 
-    let arrMediaKit = [1,2]
+    public let arrMediaKit = [1,2]
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setNavigationBar()
     }
 
-    func setNavigationBar() {
+    public func setNavigationBar() {
         self.title = "MediaKits"
         self.navigationController?.navigationBar.backgroundColor = .white
         
@@ -51,21 +56,22 @@ class MediaMainViewController: UIViewController {
         navigationItem.rightBarButtonItems = [addButtonItem, notificationButtonItem]
     }
     
-    @objc func didTapBack(_ sender: UIButton) {
+    @objc public func didTapBack(_ sender: UIButton) {
 
     }
     
-    @objc func didTapNotification(_ sender: UIButton) {
+    @objc public func didTapNotification(_ sender: UIButton) {
 
     }
     
-    @objc func didTapAdd(_ sender: UIButton) {
+    @objc public func didTapAdd(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "CreateMediaKitViewController") as! CreateMediaKitViewController
         vc.isEdit = false
+        vc.titleLabel = "Create Mediakit"
         self.present(vc, animated: true, completion: nil)
     }
     
-    @IBAction func didTapViewMediaKit(_ sender: Any) {
+    @IBAction public func didTapViewMediaKit(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MediaKitViewController") as! MediaKitViewController
         self.present(vc, animated: true, completion: nil)
     }
@@ -73,11 +79,11 @@ class MediaMainViewController: UIViewController {
 }
 
 extension MediaMainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrMediaKit.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if indexPath.row == arrMediaKit.count - 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CreateMediaKitCell", for: indexPath) as! CreateMediaKitCell
@@ -90,8 +96,9 @@ extension MediaMainViewController: UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MediaKitViewController") as! MediaKitViewController
+        
         self.present(vc, animated: true, completion: nil)
     }
 }
