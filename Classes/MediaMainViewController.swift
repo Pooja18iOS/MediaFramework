@@ -12,8 +12,15 @@ public func MyCustomFrameworkBundle() -> Bundle? {
     return frameworkBundle
 }
 
+public func returnImage(_ named:String) -> UIImage {
+    let myBundle = Bundle.init(identifier: "org.cocoapods.MediaFramework")
+    let imagePath = (myBundle?.path(forResource: "images", ofType: "bundle"))! + "/" + named
+    let theImage = UIImage(contentsOfFile: imagePath)
+    return theImage!
+}
+
 public class MediaKitCell: UICollectionViewCell {
-    
+    @IBOutlet weak public var imgMedia: UIImageView!
 }
 
 public class CreateMediaKitCell: UICollectionViewCell {
