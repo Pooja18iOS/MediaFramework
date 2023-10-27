@@ -22,7 +22,7 @@ pod 'MediaFramework'
 
 ## Author
 
-Devang, devang@theonetechnologies.co.in
+Pooja, Pooja18iOS@theonetechnologies.co.in
 
 ## License
 
