@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediaFramework'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'A short description of MediaFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -30,14 +30,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'MediaFramework/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   s.swift_version = '5.0'
-   s.resource_bundles = {
-     'MediaFramework' => ['Assets/**/*.xcassets']
-#     ['MediaFramework/Assets/*.png']
+  s.resource_bundles = {
+     'MediaFramework' =>  ['Classes/**/*.{xib,storyboard,xcassets}']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
