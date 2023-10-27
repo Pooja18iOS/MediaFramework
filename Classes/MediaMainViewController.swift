@@ -67,7 +67,7 @@ public class MediaMainViewController: UIViewController {
     @objc public func didTapAdd(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "CreateMediaKitViewController") as! CreateMediaKitViewController
         vc.isEdit = false
-        vc.titleLabel = "Create Mediakit"
+//        vc.titleLabel = "Create Mediakit"
         self.present(vc, animated: true, completion: nil)
     }
     
