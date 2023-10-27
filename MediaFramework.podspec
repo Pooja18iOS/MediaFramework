@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediaFramework'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of MediaFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source_files = 'MediaFramework/Classes/**/*'
   s.swift_version = '5.0'
    s.resource_bundles = {
-     'MediaFramework' => => ['Assets/**/*.xcassets']
+     'MediaFramework' => ['Assets/**/*.xcassets']
 #     ['MediaFramework/Assets/*.png']
    }
 
