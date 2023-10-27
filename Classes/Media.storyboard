@@ -13,7 +13,7 @@
         <!--Media Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MediaMainViewController" customModule="MediaKits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MediaMainViewController" customModule="MediaFramework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="395" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaKitCell" id="ul1-Jw-vWK" customClass="MediaKitCell" customModule="MediaKits" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaKitCell" id="ul1-Jw-vWK" customClass="MediaKitCell" customModule="MediaFramework" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="178" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="htP-dK-6BW">
@@ -223,7 +223,7 @@
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="178" height="120"/>
                                                             </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CreateMediaKitCell" id="B4a-zw-0oX" customClass="CreateMediaKitCell" customModule="MediaKits" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CreateMediaKitCell" id="B4a-zw-0oX" customClass="CreateMediaKitCell" customModule="MediaFramework" customModuleProvider="target">
                                                                 <rect key="frame" x="188" y="0.0" width="170" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yrO-kK-0Cf">
@@ -490,7 +490,7 @@
         <!--Media Kit View Controller-->
         <scene sceneID="Tid-bb-eGj">
             <objects>
-                <viewController storyboardIdentifier="MediaKitViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Aka-jZ-0xG" customClass="MediaKitViewController" customModule="MediaKits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaKitViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Aka-jZ-0xG" customClass="MediaKitViewController" customModule="MediaFramework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Sg-MH-qQL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -706,7 +706,7 @@
         <!--Create Media Kit View Controller-->
         <scene sceneID="c4z-wR-V8N">
             <objects>
-                <viewController storyboardIdentifier="CreateMediaKitViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xgp-EN-5mr" customClass="CreateMediaKitViewController" customModule="MediaKits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateMediaKitViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xgp-EN-5mr" customClass="CreateMediaKitViewController" customModule="MediaFramework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfZ-Xx-gSg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1256,7 +1256,7 @@
         <!--Choose Image Popup-->
         <scene sceneID="TPk-is-LMO">
             <objects>
-                <viewController storyboardIdentifier="ChooseImagePopup" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rbN-GE-WFG" customClass="ChooseImagePopup" customModule="MediaKits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChooseImagePopup" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rbN-GE-WFG" customClass="ChooseImagePopup" customModule="MediaFramework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pSj-uJ-oAg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
