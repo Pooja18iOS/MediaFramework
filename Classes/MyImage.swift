@@ -10,7 +10,7 @@ import Foundation
 public class MyImage {
     public class func getImage() -> UIImage? {
         let bundle = Bundle(for: self)
-        return UIImage(named: "Ocean", in: bundle, compatibleWith: nil)
+        return UIImage(named: "ocean", in: bundle, compatibleWith: nil)
     }
     
     public class ImageProvider {
