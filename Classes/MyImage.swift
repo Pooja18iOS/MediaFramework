@@ -19,7 +19,7 @@ public class ImageProvider {
     // convenient for specific image
     public static func picture() -> UIImage {
         if #available(iOS 13.0, *) {
-            return UIImage(named: "ocean", in: Bundle(for: self), with: nil) ?? UIImage()
+            return UIImage(named: "Ocean", in: Bundle(for: self), with: nil) ?? UIImage()
         } else {
             // Fallback on earlier versions
             return UIImage()
