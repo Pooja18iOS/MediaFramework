@@ -14,7 +14,7 @@ public func MyCustomFrameworkBundle() -> Bundle? {
 
 public func returnImage(_ named:String) -> UIImage {
     let myBundle = Bundle.init(identifier: "org.cocoapods.MediaFramework")
-    let imagePath = (myBundle?.path(forResource: "images", ofType: "bundle"))! + "/" + named
+    let imagePath = (myBundle?.path(forResource: "Media", ofType: "bundle"))! + "/" + named
     let theImage = UIImage(contentsOfFile: imagePath)
     return theImage!
 }

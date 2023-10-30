@@ -222,6 +222,9 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="178" height="120"/>
+                                                                <connections>
+                                                                    <outlet property="imgMedia" destination="ECp-hi-Wto" id="lqX-dX-NUm"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CreateMediaKitCell" id="B4a-zw-0oX" customClass="CreateMediaKitCell" customModule="MediaFramework" customModuleProvider="target">
                                                                 <rect key="frame" x="188" y="0.0" width="170" height="120"/>
@@ -523,7 +526,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-E7-dgh">
-                                        <rect key="frame" x="176.66666666666666" y="4.6666666666666643" width="40" height="35"/>
+                                        <rect key="frame" x="176.66666666666666" y="4.6666666666666643" width="40" height="35.000000000000007"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="VP5-8y-A6F"/>
                                             <constraint firstAttribute="width" constant="40" id="n4Q-ca-7Oq"/>
