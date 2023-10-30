@@ -17,7 +17,14 @@ public class MyImage {
         let bundle = Bundle(for: self)
         return UIImage(named: "Ocean", in: bundle, compatibleWith: nil)
     }
-
+    
+    func getPngImage (named name : String) -> UIImage? {
+        if let imgPath = Bundle.main.path(forResource: name, ofType: ".png") {
+            return UIImage(contentsOfFile: imgPath)
+        }
+        return nil
+    }
+    
 }
 
 public class ImageProvider {
