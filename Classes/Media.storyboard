@@ -487,6 +487,7 @@
                     <size key="freeformSize" width="395" height="1050"/>
                     <connections>
                         <outlet property="btnBack" destination="aMY-7R-GYc" id="0TL-Eh-vtV"/>
+                        <outlet property="btnNotification" destination="myo-oi-pqZ" id="2pb-sc-AQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
