@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import UIKit
+
+public func getPicture() -> UIImage? {
+    return UIImage(named: "Ocean")
+}
 
 public class MyImage {
     public class func getImage() -> UIImage? {
         let bundle = Bundle(for: self)
-        return UIImage(named: "ocean", in: bundle, compatibleWith: nil)
+        return UIImage(named: "Ocean", in: bundle, compatibleWith: nil)
     }
 
 }
