@@ -43,18 +43,18 @@ class ChooseImagePopup: UIViewController, UIImagePickerControllerDelegate, UINav
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let selectedImage = info[.originalImage] as? UIImage {
-            delegate?.didSelectImage(selectedImage, isProfile: self.isProfile)
-            picker.dismiss(animated: true, completion: {
-                self.dismiss(animated: true, completion: nil)
-            })
-        }
-        
-        // Dismiss the image picker
-        picker.dismiss(animated: true, completion: nil)
-        dismiss(animated: true)
-    }
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+//        if let selectedImage = info[.originalImage] as? UIImage {
+//            delegate?.didSelectImage(selectedImage, isProfile: self.isProfile)
+//            picker.dismiss(animated: true, completion: {
+//                self.dismiss(animated: true, completion: nil)
+//            })
+//        }
+//        
+//        // Dismiss the image picker
+//        picker.dismiss(animated: true, completion: nil)
+//        dismiss(animated: true)
+//    }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true)
