@@ -29,6 +29,7 @@ public class CreateMediaKitCell: UICollectionViewCell {
 
 public class MediaMainViewController: UIViewController {
 
+    @IBOutlet weak public var btnBack : UIButton!
     public let arrMediaKit = [1,2]
     
     public override func viewDidLoad() {
@@ -80,6 +81,7 @@ public class MediaMainViewController: UIViewController {
     
     @IBAction public func didTapViewMediaKit(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MediaKitViewController") as! MediaKitViewController
+        vc.btnContactMe.setImage(UIImage(named: "Ocean"), for: .normal)
         self.present(vc, animated: true, completion: nil)
     }
     

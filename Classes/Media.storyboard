@@ -485,6 +485,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="m04-sV-4Ry"/>
                     <size key="freeformSize" width="395" height="1050"/>
+                    <connections>
+                        <outlet property="btnBack" destination="aMY-7R-GYc" id="0TL-Eh-vtV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
