@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediaFramework'
-  s.version          = '0.0.16'
+  s.version          = '0.0.18'
   s.summary          = 'A short description of MediaFramework.'
 
 # This description is used to generate tags and improve search results.
