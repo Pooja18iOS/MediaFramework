@@ -8,15 +8,15 @@
 import Foundation
 import UIKit
 
-class MediaKitViewController: UIViewController {
+public class MediaKitViewController: UIViewController {
     
-    @IBOutlet weak var btnContactMe: UIButton!
+    @IBOutlet public weak var btnContactMe: UIButton?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        btnContactMe.applyGradient(colours: [.purple, .systemPink])
+        btnContactMe?.setImage(UIImage(named: "sticky"), for: .normal)
+        btnContactMe!.applyGradient(colours: [.purple, .systemPink])
     }
     
     @IBAction func didTapBack(_ sender: Any) {
