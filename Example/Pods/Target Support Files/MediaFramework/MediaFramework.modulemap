@@ -1,0 +1,6 @@
+framework module MediaFramework {
+  umbrella header "MediaFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

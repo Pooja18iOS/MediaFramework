@@ -29,8 +29,8 @@ public class CreateMediaKitCell: UICollectionViewCell {
 
 public class MediaMainViewController: UIViewController {
 
-    @IBOutlet public var btnBack : UIButton?
-    @IBOutlet public weak var btnNotification : UIButton?
+    @IBOutlet open var btnBack : UIButton?
+    @IBOutlet open weak var btnNotification : UIButton?
     
     public let arrMediaKit = [1,2]
     

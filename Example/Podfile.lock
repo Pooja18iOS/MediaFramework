@@ -1,0 +1,16 @@
+PODS:
+  - MediaFramework (0.1.0)
+
+DEPENDENCIES:
+  - MediaFramework (from `../`)
+
+EXTERNAL SOURCES:
+  MediaFramework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MediaFramework: 0c1885d1b864deabdbd823e2d4c52a0dd225cbb1
+
+PODFILE CHECKSUM: da4011c30c0393327a310e10bf71fcf6b2f7d718
+
+COCOAPODS: 1.13.0
